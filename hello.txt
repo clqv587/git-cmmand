@@ -1,1 +1,26 @@
-hello
+创建并初始化版本库
+    git init
+添加到暂存区
+    git add xxx
+添加到本地版本库
+    git commint -m '备注'
+查看工作区和缓存区的状态
+    git status
+查看版本库信息
+    git log
+查看操作日志
+    git reflog
+从版本库拉回文件
+    git reset --hard (HEAD~数字）或(HEAD^`)
+回到指定版本
+    git reset --hard (版本序列号，可看操作日志)
+从暂存区拉回文件
+    git checkout xxx
+暂存区回到版本库中xx文件
+    git restet HEAD xxxx
+查看工作区文件和版本库文件区别
+    git diff HEAD -- xxx
+查看当前版本和前版本的区别
+    git diff HEAD HEAD^ --XXX
+删除文件
+    git rm xx
