@@ -46,4 +46,4 @@
     git push前 git pull
 
 github 上有两种模式 http和ssh  ssh可以免输密码
-  push和pull需要远程仓库的分支，具体到时百度
+  push和pull需要远程仓库的分支，具体到时百度。
