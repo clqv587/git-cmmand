@@ -36,3 +36,14 @@
     git merge xxx
 删除分支
     git branch -d xxx
+快速合并分支
+    git merge xxx
+解决分支冲突百度  主要引起原因是两个分支都修改了同一个文件
+
+非快速合并
+    git merge --no-ff xx -m 'messg'
+远程仓库名默认为origin，可修改
+    git push前 git pull
+
+github 上有两种模式 http和ssh  ssh可以免输密码
+  push和pull需要远程仓库的分支，具体到时百度
