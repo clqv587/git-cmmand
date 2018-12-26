@@ -7,7 +7,7 @@
 查看工作区和缓存区的状态
     git status
 查看版本库信息
-    git log
+    git log --pretty=oneline --graph
 查看操作日志
     git reflog
 从版本库拉回文件
@@ -16,14 +16,16 @@
     git reset --hard (版本序列号，可看操作日志)
 从暂存区拉回文件
     git checkout xxx
-暂存区回到版本库中xx文件
+工作区回到版本库中xx文件
     git restet HEAD xxxx
 查看工作区文件和版本库文件区别
-    git diff HEAD -- xxx
+    git diff HEAD xxx
 查看当前版本和前版本的区别
-    git diff HEAD HEAD^ --XXX
-删除文件
+    git diff HEAD HEAD^ XXX
+删除工作区，暂存区文件
     git rm xx
+删除暂存区文件
+    git rm --cached xxx
 查看分支
     git banch
 创建分支
@@ -36,14 +38,17 @@
     git merge xxx
 删除分支
     git branch -d xxx
-快速合并分支
-    git merge xxx
 解决分支冲突百度  主要引起原因是两个分支都修改了同一个文件
 
-非快速合并
+非快速合并（可以记录两个分支的mesg）
     git merge --no-ff xx -m 'messg'
+查看本地的远程库
+    git remote --v
 远程仓库名默认为origin，可修改
-    git push前 git pull
+    git push前
+git pull <远程主机名> <远程分支名>:<本地分支名>
 
 github 上有两种模式 http和ssh  ssh可以免输密码
+
   push和pull需要远程仓库的分支，具体到时百度。
+
